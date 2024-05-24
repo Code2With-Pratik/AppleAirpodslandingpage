@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "SFPRODISPLAYBOLD";
+  src: url("Fonts/SFPRODISPLAYBOLD.OTF");
+}
+@font-face {
+  font-family: "SFPRODISPLAYMEDIUM";
+  src: url("Fonts/SFPRODISPLAYMEDIUM.OTF");
+}
+@font-face {
+  font-family: "SFPRODISPLAYREGULAR";
+  src: url("Fonts/SFPRODISPLAYREGULAR.OTF");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+section{
+  width: 100%;
+  height: 100vh;
+  background-color: #fffffa;
+  position: relative;
+}
+header{
+  width: 100%;
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.menus ul{
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  font-family: "SFPRODISPLAYMEDIUM";
+  font-size: 30px;
+  color: #4b4b4b;
+  line-height: normal;
+}
+.title-text{
+  width: 100%;
+  font-family: "SFPRODISPLAYBOLD";
+  font-size: 226px;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-image: url('Images/text.jfif');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.airpod-img{
+  position: absolute;
+  height: 45rem;
+  width: 45rem;
+  z-index: 9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(.8);
+}
+.title-text::before{
+  content: '';
+  display: inline-block;
+  background-image: url('Images/right.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  width: 65px;
+  height: 65px;
+  background-color: #535353;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.title-text::after{
+  content: '';
+  display: inline-block;
+  background-image: url('Images/left.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  width: 65px;
+  height: 65px;
+  background-color: #535353;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+.airpod-details ul{
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  font-family: "SFPRODISPLAYMEDIUM";
+  font-size: 30px;
+  color: #777777;
+  line-height: normal;
+}
+.add-to-cart{
+  padding: 15px;
+  background-color: #3d4348;
+  text-align: center;
+  font-family: "SFPRODISPLAYREGULAR";
+  font-size: 35px;
+  line-height: normal;
+  color: #fff;
+  width: 320px;
+  border-radius: 50px;
+}
